@@ -10,11 +10,11 @@ class MyApp(QtWidgets.QMainWindow, UiMainWindow):
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
         UiMainWindow.__init__(self)
-        #self.setupUi(self)
         self.setupUi(self)
     
 
 if __name__ == "__main__":
+    log.info("Starting Timecard")
     app = QtWidgets.QApplication(sys.argv)
     window = MyApp()
     window.show()
